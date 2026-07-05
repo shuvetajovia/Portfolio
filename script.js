@@ -113,9 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('revealed');
-                // Trigger skill progress bars specifically when skills card reveals
+                // Trigger skill tags entrance when skills card reveals
                 if (entry.target.classList.contains('skills-card')) {
-                    animateSkills(entry.target);
+                    animateSkillTags(entry.target);
                 }
                 observer.unobserve(entry.target);
             }
@@ -129,14 +129,16 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(element);
     });
 
-    function animateSkills(cardElement) {
-        const progressBars = cardElement.querySelectorAll('.skill-progress');
-        progressBars.forEach(bar => {
-            const width = bar.style.width;
-            bar.style.width = '0%';
+    function animateSkillTags(cardElement) {
+        const tags = cardElement.querySelectorAll('.skill-tag');
+        tags.forEach((tag, index) => {
+            tag.style.opacity = '0';
+            tag.style.transform = 'translateY(8px) scale(0.95)';
+            tag.style.transition = 'opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
             setTimeout(() => {
-                bar.style.width = width;
-            }, 100);
+                tag.style.opacity = '1';
+                tag.style.transform = 'translateY(0) scale(1)';
+            }, index * 40);
         });
     }
 
