@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuveta Jovi | Machine Learning & Computer Vision Engineer</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Shuveta Jovi, Aspiring Machine Learning & Computer Vision Engineer. B.Tech Computer Science student at SRM IST Kattankulathur. High CGPA (9.6), AWS certified, and developer of AI/CV research projects.">
+    <meta name="keywords" content="Shuveta Jovi, Machine Learning, Computer Vision, Deep Learning, Cloud Computing, Python, PyTorch, TensorFlow, Portfolio, Researcher, FinOps">
+    <meta name="author" content="Shuveta Jovi">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Shuveta Jovi | ML & CV Engineer Portfolio">
+    <meta property="og:description" content="Aspiring Machine Learning & Computer Vision Engineer showcasing research publications, AWS cloud training, and interactive AI projects.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive Canvas Background -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>Shuveta Jovi<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Research</a>
+                <a href="#contact" class="btn btn-nav">Let's Connect</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="menu-open"></i>
+                    <i data-lucide="x" class="menu-close hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Available for Internships</span>
+                    <h1 class="hero-title">Shuveta Jovi</h1>
+                    <h2 class="hero-subtitle">Aspiring <span id="typed-text" class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                    <p class="hero-description">
+                        Specializing in Artificial Intelligence, Computer Vision, and Cloud Technologies. I build data-driven systems leveraging PyTorch, TensorFlow, and OpenCV to solve real-world, socially impactful problems.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get in Touch</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Projects</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://linkedin.com/in/a-shuveta-jovi-a3b085329" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/shuvetajovia" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="mailto:shuvetajovi2006a@gmail.com" class="social-icon" aria-label="Send Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="tel:9150606391" class="social-icon" aria-label="Phone Contact">
+                            <i data-lucide="phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Abstract Graphic -->
+                <div class="hero-graphic">
+                    <div class="graphic-sphere"></div>
+                    <div class="graphic-ring ring-1"></div>
+                    <div class="graphic-ring ring-2"></div>
+                    <div class="graphic-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title text-center">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card intro-card scroll-reveal">
+                        <h3>My Objective</h3>
+                        <p>
+                            I am a B.Tech Computer Science and Engineering student at SRM Institute of Science and Technology, Kattankulathur, with a deep-rooted passion for Machine Learning, Artificial Intelligence, and Computer Vision. 
+                        </p>
+                        <p>
+                            Currently seeking a research-oriented internship where I can apply robust data-driven techniques, develop models in TensorFlow/PyTorch, and solve complex, socially impactful challenges. I blend a strong academic record with practical cloud optimizations and web applications.
+                        </p>
+                    </div>
+                    
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card scroll-reveal" style="--delay: 1">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <span class="stat-number">9.6</span>
+                            <span class="stat-label">B.Tech CGPA / 10.0</span>
+                        </div>
+                        
+                        <div class="stat-card scroll-reveal" style="--delay: 2">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="file-text"></i>
+                            </div>
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Research Projects</span>
+                        </div>
+                        
+                        <div class="stat-card scroll-reveal" style="--delay: 3">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Web Internships</span>
+                        </div>
+                        
+                        <div class="stat-card scroll-reveal" style="--delay: 4">
+                            <div class="stat-icon-wrapper">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title text-center">Technical Expertise</h2>
+                <p class="section-subtitle text-center">A comprehensive toolkit spanning AI, Web Development, and Cloud infrastructure.</p>
+                
+                <div class="skills-grid">
+                    <!-- Core Skills Group -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-header">
+                            <i data-lucide="brain-circuit"></i>
+                            <h3>Machine Learning & CV</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Computer Vision</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Deep Learning</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PyTorch & TensorFlow</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">OpenCV</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">scikit-learn</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages Group -->
+                    <div class="skills-card scroll-reveal" style="--delay: 1">
+                        <div class="skills-header">
+                            <i data-lucide="code"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web & Cloud Group -->
+                    <div class="skills-card scroll-reveal" style="--delay: 2">
+                        <div class="skills-header">
+                            <i data-lucide="cloud"></i>
+                            <h3>Web & Cloud</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">GCP & Firebase</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AWS Foundations</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML / CSS / JavaScript</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP & Bootstrap</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title text-center">My Timeline</h2>
+                <div class="timeline-tabs">
+                    <button class="timeline-tab-btn active" data-tab="work">Internships</button>
+                    <button class="timeline-tab-btn" data-tab="education">Education</button>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <!-- Work Timeline -->
+                    <div class="timeline-content active" id="work-timeline">
+                        <div class="timeline-item scroll-reveal">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">Jan 2026 – Feb 2026</span>
+                                <h3>Web Developer Intern</h3>
+                                <h4 class="timeline-company">The Skybrisk</h4>
+                                <ul class="timeline-bullets">
+                                    <li>Completed Web Developer Internship; focused on frontend web development projects.</li>
+                                    <li>Created responsive frontend components with HTML, CSS, and Javascript.</li>
+                                    <li>Contributed to overall UI/UX improvements and responsive design elements.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item scroll-reveal" style="--delay: 1">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">May 2025 – Jun 2025</span>
+                                <h3>Web Developer Intern</h3>
+                                <h4 class="timeline-company">Codebind Technologies</h4>
+                                <ul class="timeline-bullets">
+                                    <li>Developed custom dynamic web applications utilizing HTML, CSS, PHP, and Bootstrap.</li>
+                                    <li>Enhanced overall frontend interfaces and debugged complex cross-browser styles.</li>
+                                    <li>Collaborated with design teams to align UI deliverables with project requirements.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Timeline -->
+                    <div class="timeline-content" id="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-card">
+                                <span class="timeline-date">2024 – 2028</span>
+                                <h3>B.Tech – Computer Science Engineering</h3>
+                                <h4 class="timeline-company">SRM Institute of Science and Technology, Kattankulathur</h4>
+                                <div class="timeline-stats">
+                                    <span class="badge">CGPA: 9.6 / 10.0</span>
+                                </div>
+                                <ul class="timeline-bullets">
+                                    <li>Specialized courses in Artificial Intelligence, Neural Networks, and Web Technologies.</li>
+                                    <li>Active student chapter officer (Outreach Head in AIMEEE student chapter).</li>
+                                    <li>Engaged in visual computing and cloud research initiatives.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title text-center">Featured Projects</h2>
+                
+                <!-- Projects Filter Buttons -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ml-cv">ML & Computer Vision</button>
+                    <button class="filter-btn" data-filter="web-dev">Web Development</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card scroll-reveal" data-category="ml-cv">
+                        <div class="project-media">
+                            <div class="project-icon-placeholder">
+                                <i data-lucide="map"></i>
+                            </div>
+                            <span class="project-category-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Orthoimage Building Detection</h3>
+                            <p class="project-description">
+                                A high-precision satellite building footprint detection and feature extraction system using high-resolution geospatial imagery and deep neural networks under complex urban patterns.
+                            </p>
+                            <div class="project-tags">
+                                <span>PyTorch</span>
+                                <span>OpenCV</span>
+                                <span>Geospatial ML</span>
+                                <span>Segmentation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shuvetajovia" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Project Code">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card scroll-reveal" data-category="ml-cv" style="--delay: 1">
+                        <div class="project-media">
+                            <div class="project-icon-placeholder">
+                                <i data-lucide="heart-pulse"></i>
+                            </div>
+                            <span class="project-category-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>MultiHos AI — Multi-Disease Prediction</h3>
+                            <p class="project-description">
+                                AI-powered health monitoring application for real-time predictions of skin, ear, nail, and eye diseases from live video inputs, leveraging customized CNN models.
+                            </p>
+                            <div class="project-tags">
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>CNNs</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shuvetajovia" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Project Code">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card scroll-reveal" data-category="ml-cv" style="--delay: 2">
+                        <div class="project-media">
+                            <div class="project-icon-placeholder">
+                                <i data-lucide="sprout"></i>
+                            </div>
+                            <span class="project-category-tag">Machine Learning</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>AgroVision — Plant Disease Detection</h3>
+                            <p class="project-description">
+                                End-to-end smart agriculture solution combining deep learning image classifiers to diagnose plant diseases, crop identification, and predictive model for local rainfall.
+                            </p>
+                            <div class="project-tags">
+                                <span>PyTorch</span>
+                                <span>Deep Learning</span>
+                                <span>Rainfall Prediction</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shuvetajovia" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Project Code">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card scroll-reveal" data-category="web-dev" style="--delay: 3">
+                        <div class="project-media">
+                            <div class="project-icon-placeholder">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <span class="project-category-tag">Web Design</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gallantry Awards Web Portal</h3>
+                            <p class="project-description">
+                                Interactive web portal highlighting gallantry award awardees with fluid structured layouts, immersive transitions, and optimized performance.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Bootstrap</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shuvetajovia" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Project Code">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Research Section -->
+        <section id="publications" class="section publications-section">
+            <div class="container">
+                <h2 class="section-title text-center">Research & Publications</h2>
+                <p class="section-subtitle text-center">Developing solutions and conducting academic research in cloud optimizations and medical deep learning.</p>
+                
+                <div class="publications-grid">
+                    <!-- Conference Paper -->
+                    <div class="pub-card scroll-reveal">
+                        <div class="pub-status-badge">Accepted / Published</div>
+                        <span class="pub-type">Conference Paper</span>
+                        <h3>FinOps-based Cloud Cost Optimization Using Billing Analytics and Anomaly Detection in GCP</h3>
+                        <p class="pub-conference">Corresponding Author — <strong>ICESIC Conference 2026</strong></p>
+                        <p class="pub-desc">
+                            Designed research addressing multi-billion billing scale cost monitoring in Google Cloud Platform. Leveraged real-time anomaly detection algorithms to flag abnormal usage and optimize resource allocations.
+                        </p>
+                        <div class="pub-keywords">
+                            <span>FinOps</span>
+                            <span>GCP</span>
+                            <span>Cost Optimization</span>
+                            <span>Anomaly Detection</span>
+                        </div>
+                    </div>
+
+                    <!-- Research 1 -->
+                    <div class="pub-card scroll-reveal" style="--delay: 1">
+                        <div class="pub-status-badge ongoing">Ongoing Research</div>
+                        <span class="pub-type">Medical AI Research</span>
+                        <h3>Auricular Abnormality Detection</h3>
+                        <p class="pub-conference">Deep Learning in Medical Imaging</p>
+                        <p class="pub-desc">
+                            Researching and building neural model structures to identify congenital auricular deformities from complex photographic clinical sets for early pediatrician diagnostic assistance.
+                        </p>
+                        <div class="pub-keywords">
+                            <span>Deep Learning</span>
+                            <span>Medical Image Analysis</span>
+                            <span>CNNs</span>
+                            <span>Diagnostics Assistance</span>
+                        </div>
+                    </div>
+
+                    <!-- Research 2 -->
+                    <div class="pub-card scroll-reveal" style="--delay: 2">
+                        <div class="pub-status-badge ongoing">Ongoing Research</div>
+                        <span class="pub-type">Geofencing & Management</span>
+                        <h3>Smart Faculty Tracking System</h3>
+                        <p class="pub-conference">Real-time Location Services</p>
+                        <p class="pub-desc">
+                            Designed a real-time geofenced tracking interface. Integrated secure Firebase backend configurations to stream positioning inputs and manage faculty status grids dynamically.
+                        </p>
+                        <div class="pub-keywords">
+                            <span>Geofencing</span>
+                            <span>Real-time Databases</span>
+                            <span>Firebase</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications -->
+        <section id="certifications" class="section cert-section">
+            <div class="container">
+                <div class="dual-grid">
+                    <!-- Achievements Column -->
+                    <div class="cert-column scroll-reveal">
+                        <h2 class="column-title"><i data-lucide="trophy"></i> Key Achievements</h2>
+                        <div class="achievements-list">
+                            <div class="ach-item">
+                                <div class="ach-icon"><i data-lucide="medal" class="gold"></i></div>
+                                <div class="ach-text">
+                                    <h4>Winner – Summit 2.0</h4>
+                                    <p>Visual Computing Research Community Hackathon and model pitch</p>
+                                </div>
+                            </div>
+                            <div class="ach-item">
+                                <div class="ach-icon"><i data-lucide="medal" class="silver"></i></div>
+                                <div class="ach-text">
+                                    <h4>Runner-up – AI Sparks 2026</h4>
+                                    <p>Annual Artificial Intelligence hackathon and model optimization challenge</p>
+                                </div>
+                            </div>
+                            <div class="ach-item">
+                                <div class="ach-icon"><i data-lucide="award"></i></div>
+                                <div class="ach-text">
+                                    <h4>3rd Place – BuildX Hackathon</h4>
+                                    <p>Developed dynamic fullstack projects under rapid time constraint</p>
+                                </div>
+                            </div>
+                            <div class="ach-item">
+                                <div class="ach-icon"><i data-lucide="users"></i></div>
+                                <div class="ach-text">
+                                    <h4>Outreach Head</h4>
+                                    <p>AIMEEE Student Chapter leader coordinating community AI events</p>
+                                </div>
+                            </div>
+                            <div class="ach-item">
+                                <div class="ach-icon"><i data-lucide="star"></i></div>
+                                <div class="ach-text">
+                                    <h4>Top 50 – Smart India Hackathon</h4>
+                                    <p>National level hackathon project presentation, internal qualifiers leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="cert-column scroll-reveal" style="--delay: 1">
+                        <h2 class="column-title"><i data-lucide="shield-check"></i> Certifications</h2>
+                        <div class="certs-list">
+                            <div class="cert-item-card">
+                                <div class="cert-badge-icon"><i data-lucide="cloud-lightning"></i></div>
+                                <div class="cert-detail">
+                                    <h4>AWS Academy Trained – Cloud Foundation</h4>
+                                    <span class="cert-issuer">Amazon Web Services Academy</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card">
+                                <div class="cert-badge-icon"><i data-lucide="award"></i></div>
+                                <div class="cert-detail">
+                                    <h4>Python for Data Science</h4>
+                                    <span class="cert-issuer">IBM Professional Certification</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card">
+                                <div class="cert-badge-icon"><i data-lucide="book-open"></i></div>
+                                <div class="cert-detail">
+                                    <h4>Operating System Fundamentals</h4>
+                                    <span class="cert-issuer">NPTEL (Jul–Oct 2025)</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card">
+                                <div class="cert-badge-icon"><i data-lucide="code-2"></i></div>
+                                <div class="cert-detail">
+                                    <h4>Programming in Java</h4>
+                                    <span class="cert-issuer">NPTEL (Jul–Oct 2025)</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card">
+                                <div class="cert-badge-icon"><i data-lucide="check-circle-2"></i></div>
+                                <div class="cert-detail">
+                                    <h4>Silver - Fundamentals of OOP</h4>
+                                    <span class="cert-issuer">NPTEL (Jan–Apr 2025)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <p class="section-subtitle text-center">Let's discuss internship opportunities, research collaborations, or technology projects.</p>
+                
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-panel scroll-reveal">
+                        <div class="contact-card-simple">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email Me</h4>
+                                <a href="mailto:shuvetajovi2006a@gmail.com">shuvetajovi2006a@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card-simple">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <h4>Call Me</h4>
+                                <a href="tel:9150606391">+91 91506 06391</a>
+                            </div>
+                        </div>
+                        <div class="contact-card-simple">
+                            <i data-lucide="linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/a-shuveta-jovi-a3b085329" target="_blank" rel="noopener noreferrer">linkedin.com/in/a-shuveta-jovi-a3b085329</a>
+                            </div>
+                        </div>
+                        <div class="contact-card-simple">
+                            <i data-lucide="github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/shuvetajovia" target="_blank" rel="noopener noreferrer">github.com/shuvetajovia</a>
+                            </div>
+                        </div>
+                        <div class="contact-card-simple">
+                            <i data-lucide="languages"></i>
+                            <div>
+                                <h4>Languages spoken</h4>
+                                <p>English, Tamil, Hindi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form (Interactive Front-end wrapper) -->
+                    <form class="contact-form scroll-reveal" style="--delay: 1" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="e.g. John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="e.g. john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Tell me about your proposal or project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span id="submit-btn-text">Send Message</span>
+                            <i data-lucide="send" id="submit-btn-icon"></i>
+                        </button>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 A. Shuveta Jovi. All Rights Reserved.</p>
+            <p class="attribution">Designed & Built with <i data-lucide="heart" class="heart-icon"></i> &amp; Vanilla CSS</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
